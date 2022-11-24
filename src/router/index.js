@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LoginVue from '../views/LoginVue.vue'
+import LoginView from '../views/LoginView.vue'
+import RegisterView from '../views/RegisterView.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/login',
     name: 'login',
-    component: LoginVue
+    component: LoginView
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: RegisterView
   },
   // {
   //   path: '/about',
