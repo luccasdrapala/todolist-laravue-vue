@@ -55,6 +55,7 @@
 
 <script>
 import axios from 'axios'
+import Cookie from 'js-cookie'
 
     export default{
         name: 'Login-user',
@@ -75,6 +76,8 @@ import axios from 'axios'
 
                 axios.post('v1/login', payload).then((response) => {
                     console.log(response)
+                    const token = `${response.data.token_type} ${response.data.access_token}` 
+                    Cookie.set('_todoList_token', token, {expires: 30})
                 })
 
             },
