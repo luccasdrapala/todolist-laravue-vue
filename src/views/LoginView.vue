@@ -11,7 +11,6 @@
 <body>
     
     <TheHeaderLogin/>
-    
     <LoginBox/>
 
 </body>
@@ -20,7 +19,6 @@
 </template>
 
 <script>
-// import TheHeaderLogin from '@/components/TheHeaderLogin.vue';
 import LoginBox from '@/components/LoginBox.vue'
 import TheHeaderLogin from '@/components/TheHeaderLogin.vue';
 
